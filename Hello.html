@@ -90,7 +90,7 @@
        <p id="halo" class="halo"></p>
        <p id="kalimat"></p>
        
-       <p id="pesanAkhir" class="gaya5"></p>
+       <p id="pesanAkhir" class="gaya4"></p>
        
      </blockquote></div>
      
@@ -101,11 +101,11 @@
 
 async function inipesan(){
      var { value: nama } = await swals.fire({
-         title: 'Masukin Nama Kamu', input: 'text',
+         title: 'Put Your Name', input: 'text',
      });
      if(nama && nama.length < 11){
        window.nama = nama;
-       inihalo.innerHTML = "haii, " + nama + "!😊";
+       inihalo.innerHTML = "Wadupp broo, " + nama + "!😊";
        mulainama();
        } else {
          await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 100 karakter, ya!');inipesan();
